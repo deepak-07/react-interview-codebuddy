@@ -1,0 +1,32 @@
+.theater {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .seat {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .seat:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .seat.selected {
+    background-color: #ffc107;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+  }
+  
