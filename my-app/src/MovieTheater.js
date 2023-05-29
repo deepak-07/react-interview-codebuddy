@@ -121,7 +121,7 @@ const MovieTheater = () => {
         onChange={(e) => setRowCount(Number(e.target.value))}
       />
       <button onClick={() => setSelectedSeats([])}>Reset Selection</button>
-      <div className="theater">{renderSeats()}</div>
+      <div className="theater">{rowCount>=3 && rowCount<=10 ? renderSeats() :''}</div>
       <div>
         <h3>Total Cost: ${totalCost}</h3>
         <button onClick={submitSelectedSeats}>Submit Selected Seats</button>
