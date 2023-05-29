@@ -5,7 +5,7 @@ import MovieTheater from './MovieTheater';
 function App() {
   return (
     <div className="App">
-      Hey
+   CodeBuddy
       <MovieTheater />
     </div>
   );

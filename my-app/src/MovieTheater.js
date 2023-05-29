@@ -46,7 +46,6 @@ const MovieTheater = () => {
       setSelectedSeats([...selectedSeats, seatId]);
     }
   };
-  console.log("🚀 ~ file: MovieTheater.js:52 ~ submitSelectedSeats ~ selectedSeats:", selectedSeats)
 
   // Submit selected seats to the server
   const submitSelectedSeats = async () => {
@@ -90,12 +89,12 @@ const MovieTheater = () => {
     for (let row = rowCount; row >= 1; row--) {
       const rowSeats = seats.filter((seat) => seat.row === row);
       rows.push(
-        <div key={`row-${row}`}>
+        <div  key={`row-${row}`}>
           {rowSeats.map((seat) => (
-            <button
+            <button 
               key={`seat-${seat.id}`}
               disabled={seat.reserved}
-              className={`seat ${selectedSeats.includes(seat.id) ? 'selected' : ''}`}
+              className={`seat ${selectedSeats.includes(seat.id) ? 'selected' : ''} pyramid`}
               onClick={() => handleSeatSelection(seat.id)}
             >
               Seat {seat.number}

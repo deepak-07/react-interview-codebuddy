@@ -3,6 +3,7 @@
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 20px;
+    
   }
   
   .seat {
@@ -11,6 +12,7 @@
     border: 1px solid #ccc;
     background-color: #fff;
     cursor: pointer;
+    color: black;
   }
   
   .seat:disabled {
@@ -24,6 +26,11 @@
   
   button {
     margin-top: 10px;
+    background-color: rgb(136, 136, 187);
+    color: white;
+    border: none;
+    padding: 8px;
+    margin: 4px;
   }
   
   h3 {
